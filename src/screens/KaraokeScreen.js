@@ -60,7 +60,7 @@ const KaraokeScreen = () => {
     return (
         <View style={styles.container}>
             <AudioProcessor />
-            <Text style={styles.header}>Karaoke Songs</Text>
+            <Text style={styles.header}>Task 2 Redux</Text>
             <FlatList
                 data={mockSongs}
                 renderItem={renderSongItem}

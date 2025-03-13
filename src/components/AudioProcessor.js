@@ -283,18 +283,18 @@ const AudioProcessor = () => {
   const getButtonTitle = () => {
     switch (state) {
       case 'idle':
-        return 'Start Karaoke';
+        return 'Start Karaoke'; // play background music and record audio
       case 'recording':
         return 'Stop Karaoke';
       case 'merged':
-        return 'Play Merged Audio';
+        return 'Play Merged Audio'; // play merged audio file
       default:
         return 'Start Karaoke';
     }
   };
 
   return (
-    <View>
+    <View style={{marginBottom:40}}>
       <Button title={getButtonTitle()} onPress={handleButtonPress} />
     </View>
   );
